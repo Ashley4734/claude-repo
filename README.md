@@ -6,7 +6,6 @@ This tool generates crossword puzzle books for Amazon KDP. Provide a theme and n
 - Python 3.10+
 - `requests`
 - `reportlab`
-- `anthropic` (optional, for Claude integration)
 
 Install dependencies:
 ```bash
@@ -18,13 +17,6 @@ pip install -r requirements.txt
 python main.py "animals" 20 --size 6x9 --output animals_book.pdf
 ```
 
-To generate puzzles using Claude instead of the local generator, add the
-`--use-claude` flag. This requires setting the `ANTHROPIC_API_KEY`
-environment variable with your API key:
-
-```
-ANTHROPIC_API_KEY=<your_key> python main.py "animals" 20 --use-claude
-```
 
 This will create `animals_book.pdf` with 20 puzzles (two per page) and solutions at the end.
 
