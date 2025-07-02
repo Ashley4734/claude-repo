@@ -17,6 +17,7 @@ pip install -r requirements.txt
 python main.py "animals" 20 --size 6x9 --output animals_book.pdf
 ```
 
+
 This will create `animals_book.pdf` with 20 puzzles (two per page) and solutions at the end.
 
 The script fetches words related to the theme using the Datamuse API.

@@ -5,7 +5,6 @@ from typing import List
 
 from reportlab.lib.units import inch
 from reportlab.pdfgen import canvas
-from reportlab.lib import colors
 
 
 PAGE_SIZES = {

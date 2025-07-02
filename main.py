@@ -17,11 +17,6 @@ def main() -> None:
     if not words:
         raise SystemExit("Could not fetch words for theme")
 
-    puzzles = []
-    for _ in range(args.num_puzzles):
-        random_words = random.sample(words, min(len(words), 10))
-        grid = generate_crossword(random_words)
-        puzzles.append(Puzzle(grid=grid, words=random_words))
 
     book = CrosswordPDFBook(args.theme, puzzles, size=args.size)
     book.build(args.output)
