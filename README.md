@@ -6,6 +6,7 @@ This tool generates crossword puzzle books for Amazon KDP. Provide a theme and n
 - Python 3.10+
 - `requests`
 - `reportlab`
+- `flask`
 
 Install dependencies:
 ```bash
@@ -21,3 +22,12 @@ python main.py "animals" 20 --size 6x9 --output animals_book.pdf
 This will create `animals_book.pdf` with 20 puzzles (two per page) and solutions at the end.
 
 The script fetches words related to the theme using the Datamuse API.
+
+## Web interface
+You can also run a simple web interface:
+
+```bash
+python webapp.py
+```
+
+Then open `http://localhost:5000` in your browser to generate puzzles and download a PDF.
